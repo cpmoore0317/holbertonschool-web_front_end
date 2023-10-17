@@ -30,12 +30,10 @@
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
-
-  /* New Custom Properties */
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;
+  --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
@@ -60,20 +58,21 @@ body {
   line-height: var(--line-height-base);
 }
 
-a:link {
+a:link,
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-a:visited {
+a:visited a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+a:hover a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+a:active a[href]:active {
   background-color: var(--color-light-grey);
 }
 
@@ -132,13 +131,13 @@ h6 {
 }
 
 /* Styling for Navbar and Nav Items */
-.nav {
+.nav .nav {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.nav-item {
+.nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -147,11 +146,11 @@ h6 {
   margin: var(--nav-item-margin);
 }
 
-.nav-link {
+.nav .nav-link {
   display: block;
   padding: var(--font-size-medium) 1rem;
 }
 
-.nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
