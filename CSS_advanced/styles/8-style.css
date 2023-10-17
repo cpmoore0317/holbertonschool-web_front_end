@@ -30,7 +30,7 @@
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     color: var(--text-color);
-    min-height: var(--line-height-base);
+    line-height: var(--line-height-base);
   }
   
   a {
