@@ -64,15 +64,18 @@ a[href] {
   text-decoration: none;
 }
 
-a:visited a[href]:visited {
+a:visited,
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover a[href]:hover {
+a:hover,
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active a[href]:active {
+a:active,
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
@@ -130,10 +133,14 @@ h6 {
   padding: var(--footer-padding);
 }
 
-/* Styling for Navbar and Nav Items */
-.nav .nav {
+.navbar-menu {
+  float: right;
+}
+
+.nav {
   margin: 0;
   padding: 0;
+  list-style: none;
   text-align: center;
 }
 
@@ -148,7 +155,7 @@ h6 {
 
 .nav .nav-link {
   display: block;
-  padding: var(--font-size-medium) 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav .nav-link:hover {
