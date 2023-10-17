@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
+  --text-color: var(--color-black);
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,11 +26,11 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
-  color: var(--color-black);
+  color: var(--text-color);
 }
 
 a {
-  color: var(--color-black);
+  color: var(--text-color);
 }
 
 .visually-hidden {
