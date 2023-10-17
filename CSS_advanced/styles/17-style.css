@@ -110,7 +110,8 @@ a:active {
 }
 
 .section-footer {
-    padding: var(--section-footer-padding);
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
 h1,
@@ -124,5 +125,5 @@ h6 {
 }
 
 .footer {
-    padding: var(--footer-padding);
+  padding: var(--footer-padding);
 }
